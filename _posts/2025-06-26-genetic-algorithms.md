@@ -50,7 +50,8 @@ public class GeneticDroneRouter extends AbstractDroneRouter {
     this.populationSize = populationSize;
   }
   (...)
-}```
+}
+```
 
 And then we can go ahead and implement the required method `route()`, starting with initial random population generation:
 
