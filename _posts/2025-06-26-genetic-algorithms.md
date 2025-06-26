@@ -203,26 +203,50 @@ Maven makes it easy to get a quick correctness test in and...
 ```
 Output:
 
-```console
-[INFO] 
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-[INFO] Running io.seedshare.tsp.api.impl.GeneticDroneRouterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in io.seedshare.tsp.api.impl.GeneticDroneRouterTest
-[INFO] Running io.seedshare.tsp.api.impl.NNDroneRouterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.seedshare.tsp.api.impl.NNDroneRouterTest
-[INFO] 
-[INFO] Results:
-[INFO] 
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
-[INFO] 
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  43.862 s
-[INFO] Finished at: 2025-06-25T23:35:14-07:00
-[INFO] ------------------------------------------------------------------------
-```
+<pre>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Scanning for projects...
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">------------------&lt; </span><span style="color:teal;">io.seedshare:traveling-salesman</span><span style="font-weight:bold;"> &gt;-------------------</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">Building traveling-salesman 1.0-SNAPSHOT</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">--------------------------------[ jar ]---------------------------------</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">--- </span><span style="color:green;">fmt-maven-plugin:2.9:format</span> <span style="font-weight:bold;">(default)</span> @ <span style="color:teal;">traveling-salesman</span><span style="font-weight:bold;"> ---</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Processed 8 files (0 reformatted).
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">--- </span><span style="color:green;">maven-resources-plugin:2.6:resources</span> <span style="font-weight:bold;">(default-resources)</span> @ <span style="color:teal;">traveling-salesman</span><span style="font-weight:bold;"> ---</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Using 'UTF-8' encoding to copy filtered resources.
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] skip non existing resourceDirectory /home/dan/Documents/portfolio/combinatorics-genetic/src/main/resources
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">--- </span><span style="color:green;">maven-compiler-plugin:3.1:compile</span> <span style="font-weight:bold;">(default-compile)</span> @ <span style="color:teal;">traveling-salesman</span><span style="font-weight:bold;"> ---</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Nothing to compile - all classes are up to date
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">--- </span><span style="color:green;">maven-resources-plugin:2.6:testResources</span> <span style="font-weight:bold;">(default-testResources)</span> @ <span style="color:teal;">traveling-salesman</span><span style="font-weight:bold;"> ---</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Using 'UTF-8' encoding to copy filtered resources.
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] skip non existing resourceDirectory /home/dan/Documents/portfolio/combinatorics-genetic/src/test/resources
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">--- </span><span style="color:green;">maven-compiler-plugin:3.1:testCompile</span> <span style="font-weight:bold;">(default-testCompile)</span> @ <span style="color:teal;">traveling-salesman</span><span style="font-weight:bold;"> ---</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Nothing to compile - all classes are up to date
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">--- </span><span style="color:green;">maven-surefire-plugin:2.22.2:test</span> <span style="font-weight:bold;">(default-test)</span> @ <span style="color:teal;">traveling-salesman</span><span style="font-weight:bold;"> ---</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] -------------------------------------------------------
+[<span style="font-weight:bold;color:lightblue;">INFO</span>]  T E S T S
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] -------------------------------------------------------
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Running io.seedshare.tsp.api.impl.<span style="font-weight:bold;">GeneticDroneRouterTest</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;color:green;">Tests run: 1</span>, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in io.seedshare.tsp.api.impl.<span style="font-weight:bold;">GeneticDroneRouterTest</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Running io.seedshare.tsp.api.impl.<span style="font-weight:bold;">NNDroneRouterTest</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;color:green;">Tests run: 1</span>, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.seedshare.tsp.api.impl.<span style="font-weight:bold;">NNDroneRouterTest</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Results:
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;color:green;">Tests run: 2, Failures: 0, Errors: 0, Skipped: 0</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] 
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">------------------------------------------------------------------------</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;color:green;">BUILD SUCCESS</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">------------------------------------------------------------------------</span>
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Total time:  2.626 s
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] Finished at: 2025-06-26T13:34:32-07:00
+[<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">------------------------------------------------------------------------</span>
+</pre>
 
 Success! Well, at least in terms of correctness. Optimality is of course the NP-hard part of the problem here which is what I will be exploring in my next post where we'll build a tester program that will use Java Microbenchmark Harness and known optimal solutions from a site like [TSPLIB](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/) to compare both runtime performance and optimality performance.
