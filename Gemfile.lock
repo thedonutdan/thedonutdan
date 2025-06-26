@@ -126,7 +126,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.3)
   jekyll-data
-  minimal-mistakes-jekyll
+  minimal-mistakes-jekyll (~> 4.24)
 
 BUNDLED WITH
    2.6.9
