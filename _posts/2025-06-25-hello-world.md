@@ -1,0 +1,16 @@
+---
+title: "Hello World"
+date: 2025-06-25
+---
+
+Alright, first blogpost! I feel it seems sensible to use this space to introduce myself, maybe a little personal elevator pitch, and explain my rationale for setting up this site.
+
+I am, as the author card would suggest, Daniel Andrews. I grew up tinkering with computers and dipping my toes into software development with game making. I started out with a highly curious, if somewhat destructive, approach of tearing apart any old broken piece of electronics I could get my hands on. That morphed into salvaging computer parts from my friend's garage to upgrade my dad's old Dell tower to be able to run a handful of classic games from Fallout 1 to Delta Force 2. Once my friend and I finished every character iteration we could think of on Fallout, we installed Game Maker 4.0 from a floppy disc we found in his brother's room and got busy making our own games. I never made particularly expansive games, most were arcade-y in experience, but I always found myself incredibly satisfied by building out a sharp core game system and rigorously testing it to ensure it was as polished as possible.  
+
+At the end of high school I put down computers for four years to join the United States Marine Corps. I joined the infantry and managed to find myself one of the few jobs in the Marine Corps that highly benefits from an understanding of trigonometry: operating mortars. If I don't stop myself I could turn this entire blogpost into a lesson in the theory behind proper mortar employment, but I'll spare the lecture. Technical challenges aside, I also had a chance to build my strength in good leadership, quick and precise decision making, and working with less to achieve more.  
+
+At the end of my contract with the Marine Corps I attended Palomar College in San Marcos, CA with a goal of transferring to UC San Diego on a Computer Science degree. In preparation I taught myself Python and also got a CompTIA Net+ certification which gave me a fascinating deep dive into the functioning of the internet from LANs to Autonomous Systems.  
+
+I began attending UCSD in 2023 and, as of this post, will be graduating in about a month and a half (Summer 2025). After completing my prerequisites I went for a systems programming focus, taking classes on Operating Systems, the Networking Stack, security, Compilers, and basic circuit design. In my free time I've also looked for new things to learn such as new programming languages like Rust, C++, Haskell, and also have been working on familiarizing myself with computer graphics through a small project with OpenGL (blogpost coming soon). In the future I'd like to find a career in the area of system design or computer security.  
+
+As for this site, I felt the need to set up a more robust portfolio than just linking to my Github profile (available in the links, of course) and also a devblog where I can document the projects I'm currently working on. My next post will be on my contribution to a friend's project where he is benchmarking different approaches to the Traveling Salesman Problem.
