@@ -216,7 +216,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 rouge:
-  theme: base16.dark
+  theme: base16.solarized.dark
 
 
 # Markdown Processing
