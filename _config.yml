@@ -215,6 +215,9 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+rouge:
+  theme: monokai
+
 
 # Markdown Processing
 kramdown:
