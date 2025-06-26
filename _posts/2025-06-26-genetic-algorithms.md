@@ -177,7 +177,7 @@ If we just make a few list copies this is pretty elementary to implement in code
 ## Testing
 
 Maven makes it easy to get a quick correctness test in and...
-```
+```java
   public void setup() {
     dc = new ServiceDestination("warehouse1", 14, 14);
     destinations = new LinkedList<>();
@@ -203,7 +203,7 @@ Maven makes it easy to get a quick correctness test in and...
 ```
 Output:
 
-<pre style="font-size: 0.85rem">
+<pre style="font-size: 0.65rem">
 [<span style="font-weight:bold;color:lightblue;">INFO</span>] Scanning for projects...
 [<span style="font-weight:bold;color:lightblue;">INFO</span>] 
 [<span style="font-weight:bold;color:lightblue;">INFO</span>] <span style="font-weight:bold;">------------------&lt; </span><span style="color:teal;">io.seedshare:traveling-salesman</span><span style="font-weight:bold;"> &gt;-------------------</span>
