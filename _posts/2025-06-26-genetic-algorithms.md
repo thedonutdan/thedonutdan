@@ -1,6 +1,9 @@
 ---
 title: "Genetic Algorithms"
 date: 2025-06-26
+header:
+  image: /assets/images/genetic-algo.jpg
+  og_image: /assets/images/genetic-algo.jpg
 ---
 
 A while back, a friend of mine, Kevin Caravaggio, started posting on his blog about a project aimed at benchmarking various approaches to solving the [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem). So far the project had featured Test-Driven-Development with Maven and a near-neighbor greedy algorithm. His first blog post on the subject is linked here: [](https://seedshare.io/blog/tsp1/). Looking to add some variety to the approaches for solving this problem, he asked me to write a genetic routing algorithm.  
@@ -30,7 +33,7 @@ Given a distribution center, a list of customers, a defined popsize, and a limit
 5. Introduce 10% of popsize as completely random permutation (this helps maintain genetic diversity)
 6. Repeat generation limit times and return fittest route
 
-The brute-force approach to TSP is O(n!) time complexity, our approach tries to undercut this using a bit of randomness and a heuristic assumption: good solutions are likely made up of good smaller parts, so we can propogate these good subparts through generations using order crossover and swap mutations. This covers everything you need to know to understand later code, but of course the genetic algorithm rabbit hole goes deeper. [[More](https://en.wikipedia.org/wiki/Genetic_algorithm)]
+The brute-force approach to TSP is O(n!) time complexity, our approach tries to undercut this using a bit of randomness and a heuristic assumption: good solutions are likely made up of good smaller parts, so we can propogate these good subparts through generations using order crossover and swap mutations. This covers everything you need to know to understand later code, but of course the genetic algorithm rabbit hole goes deeper. Another classic problem is the [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem), but NASA even used a Genetic Algorithm to design an [Evolved Antenna](https://en.wikipedia.org/wiki/Evolved_antenna) in an interesting case of this algorithm in the wild. [[Genetic Algorithms (Wikipedia)](https://en.wikipedia.org/wiki/Genetic_algorithm)]
 
 ## Implementation
 
