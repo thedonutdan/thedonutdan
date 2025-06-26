@@ -5,7 +5,7 @@ header:
   og_image: /assets/images/genetic-algo.jpg
 ---
 
-A while back, a friend of mine, Kevin Caravaggio, started posting on his blog about a project aimed at benchmarking various approaches to solving the [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem). So far the project had featured Test-Driven-Development with Maven and a near-neighbor greedy algorithm. His first blog post on the subject is linked here: [](https://seedshare.io/blog/tsp1/). Looking to add some variety to the approaches for solving this problem, he asked me to write a genetic routing algorithm.  
+A while back, a friend of mine, Kevin Caravaggio, started posting on his blog about a project aimed at benchmarking various approaches to solving the [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem). So far the project had featured Test-Driven-Development with Maven and a near-neighbor greedy algorithm. His first blog post on the subject is linked here: [seedshare.io/blog](https://seedshare.io/blog/tsp1/). Looking to add some variety to the approaches for solving this problem, he asked me to write a genetic routing algorithm.  
 
 We won't get too deep into the project structure, test-driven development, or the greedy algorithm for TSP since that is already well documented on Kevin's blog. However I thought it would be fun to go over my contribution to the project with a focus on the algorithm and benchmarking. So a great place to start is the problem statement Kevin started with:
 
