@@ -1,1 +1,1 @@
-Sitemap: https://thedonutdan.github.io/thedonutdan/sitemap.xml
+Sitemap: https://thedonutdan.github.io/sitemap.xml
