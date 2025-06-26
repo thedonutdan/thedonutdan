@@ -125,7 +125,7 @@ analytics:
 # Site Author
 author:
   name             : "Daniel Andrews"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/profile.png
   bio              : "I am a Computer Science student and USMC veteran interested in computer security and systems programming."
   location         : "San Diego, CA"
   #email            : "andrewsdaniel999@hotmail.com"

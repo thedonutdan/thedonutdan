@@ -36,7 +36,7 @@ The brute-force approach to TSP is O(n!) time complexity, our approach tries to 
 
 Looking at how to implement this we already have a good project structure to start with. We have an abstract drone router class that will take care of the basics, an injectible distance function for abstraction, and all the relevant classes to model the problem (i.e. `ServiceDestination.java` holds all pertinent information about destinations). So we can go ahead and put together a class that extends `AbstractDroneRouter.java` with a proper constructor:
 
-<pre>```java public class GeneticDroneRouter extends AbstractDroneRouter {
+```java public class GeneticDroneRouter extends AbstractDroneRouter {
   private int epochs;
   private int populationSize;
   private Random random = new Random();
@@ -47,11 +47,11 @@ Looking at how to implement this we already have a good project structure to sta
     this.populationSize = populationSize;
   }
   (...)
-}```</pre>
+}```
 
 And then we can go ahead and implement the required method `route()`, starting with initial random population generation:
 
-<pre>```java
+```java
 // Start with completely random population
     List<List<ServiceDestination>> population = new ArrayList<>();
 
@@ -60,11 +60,11 @@ And then we can go ahead and implement the required method `route()`, starting w
         Collections.shuffle(randRoute);
         population.add(randRoute);
     }
-```</pre>
+```
 
 As for our main loop, each step we will cull the population, crossover survivors, mutate survivors, and introduce randomness:
 
-<pre>```java
+```java
     // Cull, crossover, mutate, introduce randomness
     for (int i = 0; i < epochs; i++) {
       List<List<ServiceDestination>> culledPopulation = cull(population, distributionCenter);
@@ -88,11 +88,11 @@ As for our main loop, each step we will cull the population, crossover survivors
         population.add(randRoute);
       }
     }
-```</pre>
+```
 
 This gets the general gist, but of course the interesting stuff happens in our helper functions, mainly `cull()` and `OX()`. Starting with `cull()` we will simply sort, save the top 10%, then call our `tournamentElimination()` function to select an additional 10%:
 
-<pre>```java
+```java
   private List<List<ServiceDestination>> cull(
       List<List<ServiceDestination>> population, ServiceDestination origin) {
     List<List<ServiceDestination>> newPopulation = new ArrayList<>();
@@ -112,11 +112,11 @@ This gets the general gist, but of course the interesting stuff happens in our h
 
     return newPopulation;
   }
-```</pre>
+```
 
 `routeLength()` is just a helper function that accounts for the length of the full path including the origin. So this culls the less fit routes from our population using elitism (keeping the fittest) but the next 10% is chosen through tournament, which is an interesting concept. While tournaments sound like they should pick only the best just like elitism, we actually will be running tournaments on subsets of the remaining population which gives slightly less optimal routes a chance to survive and helps us maintain genetic diversity. Our code is shown below:
 
-<pre>```java
+```java
   private List<List<ServiceDestination>> tournamentElimination(
       List<List<ServiceDestination>> population, int survivorCount, ServiceDestination origin) {
     List<List<ServiceDestination>> survivors = new ArrayList<>();
@@ -136,7 +136,7 @@ This gets the general gist, but of course the interesting stuff happens in our h
 
     return survivors;
   }
-```</pre>
+```
 
 This runs tournaments with only a fifth of the population each time. The rationale behind this is that if a route is good enough to beat out a fifth of the population, it probably has some useful genes (subroutes) that could be benefitial to preserve in the population. Which leads us on to our final bit of interesting code, the `OX()` function. This is one of a handleful of useful crossover methods that apply to our problem and it functions by choosing a random-length subroute in parent1 and creating a child with that subroute in the same location and the rest filled in-order from parent2. An example is shown below for clarity with the selected gene underlined:  
 <pre>
@@ -146,7 +146,7 @@ child: G A C <u>D E F</u> B
 </pre>
 
 If we just make a few list copies this is pretty elementary to implement in code:
-<pre>```java
+```java
   private List<ServiceDestination> OX(
       List<ServiceDestination> parent1, List<ServiceDestination> parent2) {
     // Randomly select a gene from parent1 starting in the first half and ending in the last half
@@ -172,12 +172,12 @@ If we just make a few list copies this is pretty elementary to implement in code
 
     return child;
   }
-```</pre>
+```
 
 ## Testing
 
 Maven makes it easy to get a quick correctness test in and...
-<pre>```java
+```java
   public void setup() {
     dc = new ServiceDestination("warehouse1", 14, 14);
     destinations = new LinkedList<>();
@@ -200,10 +200,10 @@ Maven makes it easy to get a quick correctness test in and...
         .hasSize(6)
         .containsExactlyInAnyOrderElementsOf(destinations);
   }
-```</pre>
+```
 Output:
 
-<pre>```console
+```console
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
@@ -223,6 +223,6 @@ Output:
 [INFO] Total time:  43.862 s
 [INFO] Finished at: 2025-06-25T23:35:14-07:00
 [INFO] ------------------------------------------------------------------------
-```</pre>
+```
 
 Success! Well, at least in terms of correctness. Optimality is of course the NP-hard part of the problem here which is what I will be exploring in my next post where we'll build a tester program that will use Java Microbenchmark Harness and known optimal solutions from a site like [TSPLIB](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/) to compare both runtime performance and optimality performance.
