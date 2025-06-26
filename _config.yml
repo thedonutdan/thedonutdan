@@ -135,7 +135,7 @@ author:
       url: "mailto:andrewsdaniel999@hotmail.com" # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://thedonutdan.github.io" # url: "https://your-website.com"
+      url: "https://thedonutdan.github.io/thedonutdan" # url: "https://your-website.com"
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
