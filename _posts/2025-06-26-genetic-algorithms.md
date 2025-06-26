@@ -3,6 +3,7 @@ title: "Genetic Algorithms"
 date: 2025-06-26
 header:
   og_image: /assets/images/genetic-algo.jpg
+  teaser: /assets/images/genetic-algo.jpg
 ---
 
 A while back, a friend of mine, Kevin Caravaggio, started posting on his blog about a project aimed at benchmarking various approaches to solving the [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem). So far the project had featured Test-Driven-Development with Maven and a near-neighbor greedy algorithm. His first blog post on the subject is linked here: [seedshare.io/blog](https://seedshare.io/blog/tsp1/). Looking to add some variety to the approaches for solving this problem, he asked me to write a genetic routing algorithm.  
