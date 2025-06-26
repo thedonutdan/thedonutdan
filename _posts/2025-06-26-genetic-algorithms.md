@@ -2,7 +2,6 @@
 title: "Genetic Algorithms"
 date: 2025-06-26
 header:
-  image: /assets/images/genetic-algo.jpg
   og_image: /assets/images/genetic-algo.jpg
 ---
 
