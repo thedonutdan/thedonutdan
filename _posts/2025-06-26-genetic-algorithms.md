@@ -36,7 +36,8 @@ The brute-force approach to TSP is O(n!) time complexity, our approach tries to 
 
 Looking at how to implement this we already have a good project structure to start with. We have an abstract drone router class that will take care of the basics, an injectible distance function for abstraction, and all the relevant classes to model the problem (i.e. `ServiceDestination.java` holds all pertinent information about destinations). So we can go ahead and put together a class that extends `AbstractDroneRouter.java` with a proper constructor:
 
-```java public class GeneticDroneRouter extends AbstractDroneRouter {
+```java
+public class GeneticDroneRouter extends AbstractDroneRouter {
   private int epochs;
   private int populationSize;
   private Random random = new Random();
@@ -250,3 +251,6 @@ Output:
 </pre>
 
 Success! Well, at least in terms of correctness. Optimality is of course the NP-hard part of the problem here which is what I will be exploring in my next post where we'll build a tester program that will use Java Microbenchmark Harness and known optimal solutions from a site like [TSPLIB](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/) to compare both runtime performance and optimality performance.
+
+Main project: [github.com/kevvurs/combinatorics](https://github.com/kevvurs/combinatorics)  
+Genetic algorithm fork: [github.com/thedonutdan/combinatorics-genetic](https://github.com/thedonutdan/combinatorics-genetic)
