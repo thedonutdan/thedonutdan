@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Hello World",
+        "slug": "2025-06-25-hello-world",
+        "date": "2025-06-25",
+        "excerpt": "An introductory post."
+    },
+    {
+        "title": "Genetic Algorithms",
+        "slug": "2025-06-26-genetic-algorithms",
+        "date": "2025-06-26",
+        "excerpt": "Implementing a genetic algorithm solution to the Traveling Salesman Problem."
+    },
+    {
+        "title": "CRUD",
+        "slug": "2025-08-03-CRUD-1",
+        "date": "2025-08-03",
+        "excerpt": "Designing the data model for a fullstack webapp for tracking vehicle maintenance."
+    }
+]

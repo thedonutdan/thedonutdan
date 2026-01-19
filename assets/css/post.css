@@ -1,0 +1,15 @@
+.blog-post {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+}
+
+.post-content {
+    max-width: 65ch;
+}
+
+.contact-card {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}

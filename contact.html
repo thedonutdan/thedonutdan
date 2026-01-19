@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+
+        <link rel="stylesheet" href="/assets/css/base.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="container">
+                    <a href="/">Home</a>
+                    <a href="/blog/blog.html">Blog</a>
+                    <a href="/projects/projects.html">Projects</a>
+                    <a href="/contact.html" class="current">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section>
+                <h2>My info</h2>
+                <p>Email: <a href="mailto:andrewsdaniel999@hotmail.com">andrewsdaniel999@hotmail.com</a></p>
+                <p>Github: <a href="https://github.com/thedonutdan">Github/thedonutdan</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/danielandrews-">LinkedIn/thedonutdan</a></p>
+            </section>
+
+            <section>
+                <form class="contact-form" action="https://formspree.io/f/MY_ID" method="POST">
+                    <h2>Send me an Email</h2>
+                   <label for="email">Email</label>
+                   <input
+                     type="email"
+                     id="email"
+                     name="email"
+                     required
+                     >
+                    
+                    <label for="subject">Subject</label>
+                    <input
+                     type="text"
+                     id="subject"
+                     name="subject"
+                     required
+                    >
+
+                    <label for="message">Message</label>
+                    <textarea
+                     id="message"
+                     name="message"
+                     rows="6"
+                     required
+                     ></textarea>
+
+                     <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
