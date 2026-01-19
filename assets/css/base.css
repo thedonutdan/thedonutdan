@@ -111,3 +111,8 @@ footer {
     justify-items: baseline;
     gap: 1rem;
 }
+
+.contact-info {
+    list-style: none;
+    padding-left: 0;
+}
