@@ -1,4 +1,4 @@
-fetch('https://thedonutdan.github.io/thedonutdan/blog/post.json')
+fetch('thedonutdan/blog/posts.json')
   .then(res => res.json())
   .then(posts => {
     const container = document.getElementById('post-list');
