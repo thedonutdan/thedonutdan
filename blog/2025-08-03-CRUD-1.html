@@ -4,25 +4,25 @@
         <meta charset="utf-8">
         <title>CRUD</title>
 
-        <link rel="stylesheet" href="/assets/css/base.css">
-        <link rel="stylesheet" href="/assets/css/post.css">
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/post.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="/assets/css/prism.css">
-        <script src="/assets/js/prism.js" defer></script>
+        <link rel="stylesheet" href="../assets/css/prism.css">
+        <script src="../assets/js/prism.js" defer></script>
     </head>
 
     <body>
         <header>
             <nav>
                 <div class="container">
-                    <a href="/">Home</a>
-                    <a href="/blog/blog.html" class="current">Blog</a>
-                    <a href="/projects/projects.html">Projects</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="../index.html">Home</a>
+                    <a href="blog.html" class="current">Blog</a>
+                    <a href="../projects/projects.html">Projects</a>
+                    <a href="../contact.html">Contact</a>
                 </div>
             </nav>
         </header>
@@ -30,7 +30,7 @@
         <main class="container">
             <article class="blog-post">
                 <aside class="contact-card">
-                    <img src="/assets/images/profile.png" alt="Profile Image" width="128" height="128">
+                    <img src="../assets/images/profile.png" alt="Profile Image" width="128" height="128">
                     <strong>Daniel Andrews</strong>
                     San Diego, CA
                     <a href="mailto:andrewsdaniel999@hotmail.com">Email</a>
@@ -40,7 +40,7 @@
                 <section class="post-content">
                     <h1>CRUD</h1>
                     <p>Well, life has gotten crazy! In the month or so since my last post I finished my final quarter at UC San Diego and officially graduated yesterday!</p>
-                    <p>n the meantime I have continued work on benchmarking, assessing, and optimizing my genetic routing algorithm that I implemented in my <a href="/blog/2025-06-26">last post</a>.
+                    <p>n the meantime I have continued work on benchmarking, assessing, and optimizing my genetic routing algorithm that I implemented in my <a href="2025-06-26-genetic-algorithms.html">last post</a>.
                          However, I’ve been running my genetic algorithm with various inputs that are taking anywhere from 2 to 20+ hours to run– not entirely unexpected
                           but definitely a challenge when it comes to iterating quickly. I’ve been exploring performance improvements using thread pooling, but while
                            waiting for long runs to complete, I decided to start on a side project I’ve been wanting to build for a while: a vehicle maintenance tracking app.</p>
@@ -651,5 +651,8 @@ public class VehicleManager {
                 </section>
             </article>
         </main>
+        <footer>
+            Daniel Andrews
+        </footer>
     </body>
 </html>
