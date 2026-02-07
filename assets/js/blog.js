@@ -1,4 +1,4 @@
-const SITE_ROOT = `${window.location.origin}/`;
+const SITE_ROOT = "thedonutdan.org/"
 
 fetch(`${SITE_ROOT}blog/posts.json`)
   .then(res => res.json())
