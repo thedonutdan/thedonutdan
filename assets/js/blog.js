@@ -1,4 +1,4 @@
-const SITE_ROOT = document.documentElement.baseURI;
+const SITE_ROOT = `${window.location.origin}/`;
 
 fetch(`${SITE_ROOT}blog/posts.json`)
   .then(res => res.json())
