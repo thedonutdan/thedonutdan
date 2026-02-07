@@ -1,4 +1,4 @@
-fetch('/thedonutdan/blog/posts.json')
+fetch('blog/posts.json')
   .then(res => res.json())
   .then(posts => {
     const container = document.getElementById('post-list');
@@ -19,7 +19,7 @@ fetch('/thedonutdan/blog/posts.json')
         article.innerHTML = `
           <header class="blogpost-card-header">
             <h3>
-              <a href="/thedonutdan/blog/${post.slug}.html">
+              <a href="/blog/${post.slug}.html">
                 ${post.title}
               </a>
             </h3>
