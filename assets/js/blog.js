@@ -1,6 +1,4 @@
-const SITE_ROOT = "thedonutdan.org/"
-
-fetch(`${SITE_ROOT}blog/posts.json`)
+fetch(`/blog/posts.json`)
   .then(res => res.json())
   .then(posts => {
     const container = document.getElementById('post-list');
@@ -21,7 +19,7 @@ fetch(`${SITE_ROOT}blog/posts.json`)
         article.innerHTML = `
           <header class="blogpost-card-header">
             <h3>
-              <a href="${SITE_ROOT}blog/${post.slug}.html">
+              <a href="/blog/${post.slug}.html">
                 ${post.title}
               </a>
             </h3>
