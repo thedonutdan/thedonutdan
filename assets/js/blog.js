@@ -1,4 +1,6 @@
-fetch('blog/posts.json')
+const SITE_ROOT = document.documentElement.baseURI;
+
+fetch(`${SITE_ROOT}blog/posts.json`)
   .then(res => res.json())
   .then(posts => {
     const container = document.getElementById('post-list');
@@ -19,7 +21,7 @@ fetch('blog/posts.json')
         article.innerHTML = `
           <header class="blogpost-card-header">
             <h3>
-              <a href="/blog/${post.slug}.html">
+              <a href="${SITE_ROOT}blog/${post.slug}.html">
                 ${post.title}
               </a>
             </h3>
